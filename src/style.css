@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -63,7 +65,7 @@ h1 {
   color: #888;
 }
 
-button {
+button, .button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -74,7 +76,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+button:hover, .button:hover {
   border-color: #646cff;
 }
 button:focus,
@@ -93,4 +95,41 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.movie-filter-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+#movie-search{
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  margin-bottom: 1em;
+}
+
+.movie-results-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.movie-results-wrapper div{
+  background-color: #646cff;
+  border-radius: 15px;
+  padding: 2em;
+  text-align: center;
+  width: 300px;
+}
+
+.btn-wrapper{
+  margin-top: 1em;
 }

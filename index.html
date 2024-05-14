@@ -4,10 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Movies 4 U</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>Movies 4 U</h1>
+      <span>The best MovieDB</span>
+    </header>
+    <main>
+      <section class="movie-filter">
+        <div class="movie-filter-wrapper">
+
+        <input type="search" id="movie-search">
+        <input type="submit" value="Search" id="search-btn" class="button">
+        <div class="btn-wrapper">
+        <button class="filter-btn" id="year-up">Year Up</button>
+        <button class="filter-btn" id="year-down">Year Down</button>
+        <button class="filter-btn" id="best-rate">Best Rate</button>
+      </div>
+        </div>
+        <div class="movie-results-wrapper">
+
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/movie.ts"></script>
   </body>
 </html>
