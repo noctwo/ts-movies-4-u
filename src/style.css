@@ -118,7 +118,7 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
-  max-width: 80vw;
+  width: 1200px;
   margin: 0 auto;
 }
 
